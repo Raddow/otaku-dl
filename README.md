@@ -7,4 +7,4 @@ Um downloader para baixar + de 4.000 mangas
 * Support for Windows
 
 # Instalações Necessárias
-* pip install bs4 tqdm requests urllib
+* pip install bs4 tqdm
