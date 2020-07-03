@@ -1,6 +1,3 @@
 # Ignorar arquivos bytecode do python
 *pyc
 __pycache__/
-Downloads/
-usefulcodes.py
-planejamento.txt
