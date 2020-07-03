@@ -3,7 +3,7 @@
 Um downloader para baixar + de 4.000 mangas
 
 # New Updates
-* Requests.get instead of Curl
+* requests.get instead of curl
 * Support for Windows
 
 # Instalações Necessárias
