@@ -1,3 +1,0 @@
-# Ignorar arquivos bytecode do python
-*pyc
-__pycache__/
