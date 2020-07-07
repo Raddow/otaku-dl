@@ -3,6 +3,8 @@ import pathlib
 from pegahtml import pega_html as phtml
 from downloadFiles import download_url_file as duf
 
+
+
 def cd(dir):
 	"""
 	Um inteligente change directory
@@ -13,11 +15,15 @@ def cd(dir):
 	    print("Error: A file already exists with '" + dir + "' filename")
 	os.chdir(dir)
 
-def download_manga(manga, capI, capF, linkao):
+def download_manga(manga, capI, capF, caps, linkao, typoso, directory):
 	#loop range dos capitulos inicio e fim
 
-	cd("Downloads")
+	cd(directory)
 	cd(manga)
+
+	if caps:
+		capI = 0
+		capF = 2000
 
 	for cap in range(capI, capF+1):
 		if cap < 10:

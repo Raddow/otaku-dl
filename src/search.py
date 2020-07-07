@@ -1,6 +1,6 @@
 from pegahtml import pega_html as phtml
 
-def search_on_server(server, manga):
+def search_on_server(server, manga, search):
     if server == 1:
         #unionleitor
         linkosos = []
@@ -30,10 +30,19 @@ def search_on_server(server, manga):
         #parte2: pegue o link
         soup = phtml(manga_link[1])
 
-        link = soup.find('a', text='Cap. 01')
-        finally_link = str(link["href"])
-        manga_link[1] = finally_link.replace('01', '')
-        if link == None: 
+        #here for ls all
+        capao = 0
+        if search:
+            for cap in range(0, 2000):
+                if cap < 10:
+                    capao = str(0)+str(cap)
+                else:
+                    capao = str(cap)
+            link = soup.find('a', text='Cap. '+capao)
+            print('Cap. '+capao)
+            if link == None:
+                break
+        else:
             link = soup.find('a', tex='Cap. 00')
             finally_link = str(link["href"])
             manga_link[1] = finally_link.replace('00', '')
