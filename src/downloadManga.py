@@ -30,11 +30,9 @@ def download_manga(manga, capI, capF, linkao):
 		print("Baixando o capitulo: "+str(capao)+".....")
 
 		soup = phtml(linkao+str(capao))
-		print(soup)
 
 		for link in soup.find_all('img'):
 			if link.get('src')[:38] == 'https://unionleitor.top/leitor/mangas/':
-				print(link.get('src'))
 				duf(str(link.get('src')))
 
 		path = os.getcwd()
