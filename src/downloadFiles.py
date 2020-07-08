@@ -20,3 +20,5 @@ def download_url_file(url):
 	        f.write(data)
 	        # update the progress bar manually
 	        progress.update(len(data))
+
+	return filename

@@ -1,9 +1,8 @@
 import os
 import pathlib
+from PIL import Image
 from pegahtml import pega_html as phtml
 from downloadFiles import download_url_file as duf
-
-
 
 def cd(dir):
 	"""
@@ -15,11 +14,12 @@ def cd(dir):
 	    print("Error: A file already exists with '" + dir + "' filename")
 	os.chdir(dir)
 
-def download_manga(manga, capI, capF, caps, linkao, typoso, directory):
+def download_manga(manga, capI, capF, linkao, typoso='', caps=False, directory='Downloads/'):
 	#loop range dos capitulos inicio e fim
 
 	cd(directory)
 	cd(manga)
+	files = []
 
 	if caps:
 		capI = 0
@@ -39,11 +39,27 @@ def download_manga(manga, capI, capF, caps, linkao, typoso, directory):
 
 		for link in soup.find_all('img'):
 			if link.get('src')[:38] == 'https://unionleitor.top/leitor/mangas/':
-				duf(str(link.get('src')))
+				file = duf(str(link.get('src')))
+				print(file)
+				img = Image.open(file)
+				file = img.convert('RGB')
+				files.append(r'file')
 
-		path = os.getcwd()
-		print("O capitulo do manga "+ str(capao)+ " esta nesse path: :\n"+path)
-		os.chdir("..")
+		if typoso == 'pdf':
+			print("Converting to pdf...")
+			print(files)
+			pdf_name = "manga"+"_"+capao+".pdf"
+			file[0].save(r'../manga.pdf',save_all=True, append_images=files)
+			print("Cleaning up.....")
+			path = os.getcwd()
+			print("O capitulo do manga "+ str(capao)+ " esta nesse path: :\n"+path)
+			os.chdir("..")
+			shutil.rmtree(capao)
+
+		else:
+			path = os.getcwd()		
+			print("O capitulo do manga "+ str(capao)+ " esta nesse path: :\n"+path)
+			os.chdir("..")
 
 """
 download_command = "#!/bin/bash \ncurl -O "+str(link.get('src').replace(' ', '%20').replace('(', '\(').replace(')', '\)'))
