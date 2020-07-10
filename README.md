@@ -1,8 +1,8 @@
 # Otaku-Downloader
 
-Um downloader para baixar + de 4.000 mangas
+Um downloader para baixar + de 4.000 mangas em PT-BR
 
-Dedicado ao meu amigo Davidson Francis e à todos os otaku do Brasil.
+Dedicado ao meu amigo Davidson Francis do Radialle e à todos os Otaku do Brasil.
 
 ## Como Usar
 
@@ -14,7 +14,7 @@ O programa te dará uma lista de mangas de acordo com o manga inserido e o usuar
 
 O programa irá baixar por padrão, uma pasta de imagens do manga por capítulo.
 
-##Opções
+## Opções
 
 > `-h, --help`
 
