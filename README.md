@@ -8,7 +8,7 @@ Dedicado ao meu amigo Davidson Francis do Radialle e à todos os Otaku do Brasil
 
 Entre na sua linha de comando e dispare:
 
-`python3 main.py -m "inserir o manga aqui" -I baixe_esse_cap -F finalize_nesse_cap`
+`python main.py -m "inserir o manga aqui" -I baixe_esse_cap -F finalize_nesse_cap`
 
 O programa te dará uma lista de mangas de acordo com o manga inserido e o usuario deve fornecer o numero para baixar.
 
