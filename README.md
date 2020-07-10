@@ -50,12 +50,10 @@ O diretório aonde deve ser baixado os mangas
 
 ## Instalações Necessárias
 * pip install bs4 tqdm img2pdf
-<<<<<<< requirements
 
 ou utilize o requirements.txt:
 `pip install -r requirements.txt`
-=======
->>>>>>> master
+
 
 ## New Updates
 * Support for Windows, MacOS
