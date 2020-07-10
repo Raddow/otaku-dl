@@ -17,22 +17,22 @@ the_link = []
 
 def usage():
 	print('Otaku Downloader Tool')
-	print('\n')
+	print('')
 	print('Usagem: python main.py -m manga -c baixe_esse_cap -cf finalize_nesse_cap\n')
 	print('-m --manga 				- Pesquisa por um manga no database.')
-	print('-I --capInicial			- Baixe esse capitulo')
-	print('-F --capFinal			- Terminar de baixar por esse capitulo')
-	print('-c -capitulos			- Baixe todos os capitulos existentes')
-	print('-t --type				- Tipos de arquivo: pdf. Padrao: pasta')
+	print('-I --capInicial				- Baixe esse capitulo')
+	print('-F --capFinal				- Terminar de baixar por esse capitulo')
+	print('-c --caps				- Baixe todos os capitulos existentes')
+	print('-t --type				- Converte as imagens para um arquivo. Apenas PDF')
 	print('-d --directory				- Diretorio de onde os mangas devem ficar')
 	print('-l --list				- Liste todos os capitulos disponiveis')
 	print('-h --help				- Liste todos os comandos')
 	print('')
 	print('')
 	print('Exemplos: ')
-	print('python main.py -m kimetsu no yaiba -c')
-	print('python main.py -m boku no hero -c 195 -t kindle')
-	print('python main.py -m naruto -I 1 -F 10 -t pdf -d home/Downloads')
+	print('python main.py -m "kimetsu no yaiba" -c')
+	print('python main.py -m "boku no hero" -I 195 -t pdf')
+	print('python main.py -m naruto -I 1 -F 10 -d /home/Downloads/')
 	sys.exit(0)
 
 
@@ -71,12 +71,6 @@ if __name__ == "__main__":
 			assert(False, "Unhandled Option")
 
 	server = 1
-	
-	#manga = 'naruto'
-
-	#capI = 1 
-	#capF = 1
-	print(manga, bool(search))
 	the_link = sos(server, manga, search)
 	if not search:
-		dm(the_link[0], capI, capF, the_link[1], typoso, caps, directory)
+		dm(the_link[0].replace(' ', '-'), capI, capF, the_link[1], typoso, caps, directory)

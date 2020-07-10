@@ -45,12 +45,14 @@ def search_on_server(server, manga, search=False):
                 print('Cap. '+capao)
         else:
             link = soup.find('a', text='Cap. 01')
-            finally_link = str(link["href"])
-            manga_link[1] = finally_link.replace('01', '')
-            if link == None: 
+            if not link == None:
+                finally_link = str(link["href"]).replace('01', '')
+            else: 
                 link = soup.find('a', text='Cap. 00')
-                finally_link = str(link["href"])
-                manga_link[1] = finally_link.replace('00', '')
+                finally_link = str(link["href"]).replace('00', '')
+
+            manga_link[1] = finally_link
+            
             return manga_link
 
     else:
