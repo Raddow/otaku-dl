@@ -49,7 +49,7 @@ Fornece uma lista de capitulos do manga
 O diretório aonde deve ser baixado os mangas
 
 ## Instalações Necessárias
-* pip install bs4 tqdm
+* pip install bs4 tqdm img2pdf
 
 ## New Updates
 * Support for Windows, MacOS
