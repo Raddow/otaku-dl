@@ -4,6 +4,12 @@ Um downloader para baixar + de 4.000 mangas em PT-BR
 
 Dedicado ao meu amigo Davidson Francis do Radialle e à todos os Otaku do Brasil.
 
+## Instalações Necessárias
+* pip install bs4 tqdm img2pdf
+
+ou utilize o requirements.txt:
+`pip install -r requirements.txt`
+
 ## Como Usar
 
 Entre na sua linha de comando e dispare:
@@ -47,12 +53,6 @@ Fornece uma lista de capitulos do manga
 > `-d, --directory`
 
 O diretório aonde deve ser baixado os mangas
-
-## Instalações Necessárias
-* pip install bs4 tqdm img2pdf
-
-ou utilize o requirements.txt:
-`pip install -r requirements.txt`
 
 
 ## New Updates

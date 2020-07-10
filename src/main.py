@@ -54,7 +54,7 @@ if __name__ == "__main__":
 		if o in ("-h", "--help"):
 			usage()
 		elif o in ("-m", "--manga"):
-			manga = a.replace('-', ' ')
+			manga = a
 		elif o in ("-I", "--capInicial"):
 			capI = int(a)
 		elif o in ("-F", "--capFinal"):
@@ -73,4 +73,4 @@ if __name__ == "__main__":
 	server = 1
 	the_link = sos(server, manga, search)
 	if not search:
-		dm(the_link[0].replace(' ', '-'), capI, capF, the_link[1], typoso, caps, directory)
+		dm(the_link[0], capI, capF, the_link[1], typoso, caps, directory)

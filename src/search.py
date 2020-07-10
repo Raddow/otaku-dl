@@ -24,7 +24,6 @@ def search_on_server(server, manga, search=False):
             print("\n["+str(key)+"]"+" "+ "-"+" "+str(value[0]))
 
         number = int(input(("\nSelecione o numero do manga: ")))
-        #number = 13
         manga_link = dicio_links_form[number]
 
         #parte2: pegue o link
