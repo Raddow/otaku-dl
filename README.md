@@ -61,6 +61,6 @@ O diretório aonde deve ser baixado os mangas
 
 O programa ainda está em fase beta, alguns bugs devem aparecer. Se você presenciou algum problema, por favor, deixe registrado no Issues do github. Irei corrigir o bug quanto antes.
 
-Também, se você quiser contribuir no projeto, deixe-m saber disso =)
+Se você quiser contribuir no projeto, deixe-me saber disso =)
 
 Espero que gostem.
