@@ -18,7 +18,7 @@ the_link = []
 def usage():
 	print('Otaku Downloader Tool')
 	print('')
-	print('Usagem: python main.py -m manga -c baixe_esse_cap -cf finalize_nesse_cap\n')
+	print('Usagem: python main.py -m manga -I baixe_esse_cap -F finalize_nesse_cap\n')
 	print('-m --manga 				- Pesquisa por um manga no database.')
 	print('-I --capInicial				- Baixe esse capitulo')
 	print('-F --capFinal				- Terminar de baixar por esse capitulo')
