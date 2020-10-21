@@ -28,7 +28,7 @@ mostra a mensagem de help e sai do programa
 
 > `-m, --manga`
 
-pesquisa o manga na database do unionleitor
+pesquisa o manga na database do unionleitor. Note que se você digitar uma string com espaços, você deve colocar entre espaços. Exemplo: -m "Nanatsu no taizai"
 
 > `-I, --capInicial`
 
