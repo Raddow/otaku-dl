@@ -15,11 +15,12 @@ search = False
 the_link = []
 
 
+#--help
 def usage():
 	print('Otaku Downloader Tool')
 	print('')
 	print('Usagem: python main.py -m manga -I baixe_esse_cap -F finalize_nesse_cap\n')
-	print('-m --manga 				- Pesquisa por um manga no database.')
+	print('-m --manga 				- Pesquisa por um manga no database. Strings com espaços devem estar entre aspas')
 	print('-I --capInicial				- Baixe esse capitulo')
 	print('-F --capFinal				- Terminar de baixar por esse capitulo')
 	print('-c --caps				- Baixe todos os capitulos existentes')
@@ -71,6 +72,8 @@ if __name__ == "__main__":
 			assert(False, "Unhandled Option")
 
 	server = 1
+	#search the mangas
 	the_link = sos(server, manga, search)
+	#then download them if search is false
 	if not search:
 		dm(the_link[0], capI, capF, the_link[1], typoso, caps, directory)
