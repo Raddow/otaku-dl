@@ -1,6 +1,6 @@
 # Otakudl
 
-Um downloader para baixar + de 4.000 mangas em PT-BR
+Um downloader para baixar + de 4.000 mangas (PT-BR)
 
 Dedicado ao meu amigo Davidson Francis do Radialle e à todos os Otaku do Brasil.
 
