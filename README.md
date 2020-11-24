@@ -1,4 +1,4 @@
-# Otakudl
+# Otaku-dl
 
 Um downloader para baixar + de 4.000 mangas (PT-BR)
 
