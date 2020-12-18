@@ -1,6 +1,6 @@
-# Otaku-Downloader
+# otaku-dl
 
-Um downloader para baixar + de 4.000 mangas em PT-BR
+Um downloader para baixar + de 4.000 mangas (PT-BR)
 
 Dedicado ao meu amigo Davidson Francis do Radialle e à todos os Otaku do Brasil.
 
@@ -55,10 +55,11 @@ Fornece uma lista de capitulos do manga
 O diretório aonde deve ser baixado os mangas
 
 
-## New Updates
-´21/10/2020´
-*Mudanças feitas nas linhas do código para fazer o programa funcionar
-*Mais comentarios nas linhas do código para ficar mais compreensível
+## New Updates `21/10/2020`
+* Mudanças feitas nas linhas do código para fazer o programa funcionar;
+* Mais comentarios nas linhas do código para ficar mais compreensível;
+* Changelog.txt; 
+* Licença do projeto.
 
 ## Notas
 
