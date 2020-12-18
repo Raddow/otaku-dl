@@ -45,7 +45,7 @@ def download_manga(manga, capI, capF, linkao, typoso='', caps=False, directory='
 
 		#baixe apenas os links de imagens do link
 		for link in soup.find_all('img'):
-			if link.get('src')[:37] == 'http://unionleitor.top/leitor/mangas/':
+			if link.get('src')[:37] == 'http://unionmangas.top/leitor/mangas/':
 				duf(str(link.get('src')))
 
 		#converta a pdf os arquivos jpg
