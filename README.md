@@ -54,15 +54,5 @@ Fornece uma lista de capitulos do manga
 
 O diretório aonde deve ser baixado os mangas
 
-
-## New Updates `21/10/2020`
-* Mudanças feitas nas linhas do código para fazer o programa funcionar;
-* Mais comentarios nas linhas do código para ficar mais compreensível;
-* Changelog.txt; 
-* Licença do projeto.
-
 ## Notas
-
-O programa ainda está em fase beta, alguns bugs devem aparecer. Se você presenciou algum problema, por favor, deixe registrado no Issues do github. Irei corrigir o bug quanto antes.
-
-13/03/2022: o domínio responsável por baixar os arquivos foi alterado.
+13/03/2022: Atualmente o programa não está funcionando pois o domínio responsável por baixar os arquivos foi alterado.
