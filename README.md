@@ -65,6 +65,4 @@ O diretório aonde deve ser baixado os mangas
 
 O programa ainda está em fase beta, alguns bugs devem aparecer. Se você presenciou algum problema, por favor, deixe registrado no Issues do github. Irei corrigir o bug quanto antes.
 
-Se você quiser contribuir no projeto, deixe-me saber disso =)
-
-Espero que gostem.
+13/03/2022: o domínio responsável por baixar os arquivos foi alterado.
