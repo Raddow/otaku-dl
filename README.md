@@ -57,5 +57,5 @@ The directory where the sleeves should be downloaded
 
 ## Coming Soon
 This is what I am planning to do:
-> English and Japanese Mangas
-> Animes and Movies
+> `English and Japanese Mangas`
+> `Animes and Movies`
