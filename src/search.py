@@ -9,14 +9,14 @@ def search_on_server(server, manga, search=False):
 
         #parte1: busca
 
-        soup = phtml('https://unionmangas.top', '/busca', {"pesquisa":manga})
+        soup = phtml('https://unionleitor.top', '/busca', {"pesquisa":manga})
 
         for link in soup.findAll("a", string=True):
             linkosos.append(link["href"])
 
         i = 1
         for linkoso in linkosos:
-            if linkoso[:30] == 'https://unionmangas.top/manga/':
+            if linkoso[:30] == 'https://unionleitor.top/manga/':
                 dicio_links_form[i] = [linkoso[30:].replace('-', ' ').title(), linkoso]
                 i = i + 1
 
@@ -26,9 +26,11 @@ def search_on_server(server, manga, search=False):
         number = int(input(("\nSelecione o numero do manga: ")))
         manga_link = dicio_links_form[number]
 
+        #print(manga_link)
+
         #parte2: transfira o link da lista manga_link para soup
         soup = phtml(manga_link[1])
-        
+        #print(soup)
         #here for search all with the argument "-l"
         if search:
             for cap in range(0, 2000):
@@ -51,7 +53,7 @@ def search_on_server(server, manga, search=False):
                 finally_link = str(link["href"]).replace('00', '')
 
             manga_link[1] = finally_link
-            
+            #print(manga_link)
             return manga_link
 
     else:

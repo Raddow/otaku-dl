@@ -12,7 +12,7 @@ def cd(dir):
 	"""
 	if not os.path.exists(dir):  # cheque por um diretorio existente
 	    os.mkdir(dir)  # faca um diretorio se nao existe
-	elif not pathlib.Path(dir).is_dir():  # ou cheque por um arquivo com o mesmo nome
+	elif not pathlib.Path(dir).is_dir():  # ou verifique se o arquivo já existe
 	    print("Error: A file already exists with '" + dir + "' filename")
 	os.chdir(dir)
 
@@ -42,11 +42,20 @@ def download_manga(manga, capI, capF, linkao, typoso='', caps=False, directory='
 		print("Baixando o capitulo: "+str(capao)+".....")
 		#crie um objeto soup do link dado pela função dm
 		soup = phtml(linkao+str(capao))
+		#print(linkao+str(capao))
 
-		#baixe apenas os links de imagens do link
-		for link in soup.find_all('img'):
-			if link.get('src')[:37] == 'http://unionmangas.top/leitor/mangas/':
-				duf(str(link.get('src')))
+		#baixe apenas os links de imagens
+		for links in soup.find_all('img'):
+			#teste
+			#print(link.get('src'))
+			
+			#encontre os links de imagens no <img>
+			link = str(links.get('src'))
+			
+			#Não permitir que as imagens de banner sejam baixadas
+			#retorna -1 se não encontrar os banners
+			if link.find('banner_scan.png') == -1 & link.find('banner_forum.png') == -1:
+				duf(link)
 
 		#converta a pdf os arquivos jpg
 		if typoso == 'pdf':
