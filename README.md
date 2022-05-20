@@ -1,6 +1,6 @@
 # otaku-dl
 
-A python script to download more than 4,000 manga (PT-BR)
+A python script to download more than 4,000 manga (supported language: PT-BR)
 
 Dedicated to my fren Davidson Francis, to my frens from Radialle and to all Otaku in the world.
 
